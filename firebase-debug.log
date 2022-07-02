@@ -1,0 +1,102 @@
+[debug] [2022-07-02T03:28:52.964Z] ----------------------------------------------------------------------
+[debug] [2022-07-02T03:28:52.968Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mehedi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-02T03:28:52.969Z] CLI Version:   11.2.0
+[debug] [2022-07-02T03:28:52.970Z] Platform:      win32
+[debug] [2022-07-02T03:28:52.970Z] Node Version:  v16.15.0
+[debug] [2022-07-02T03:28:52.985Z] Time:          Sat Jul 02 2022 09:28:52 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-07-02T03:28:52.986Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-02T03:28:53.150Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-02T03:28:53.151Z] > authorizing via signed-in user (mehedimugdho72@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Projects-Z\TODO-APPS\ToDo-App
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-07-02T03:39:08.395Z] ----------------------------------------------------------------------
+[debug] [2022-07-02T03:39:08.398Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mehedi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-02T03:39:08.399Z] CLI Version:   11.2.0
+[debug] [2022-07-02T03:39:08.399Z] Platform:      win32
+[debug] [2022-07-02T03:39:08.399Z] Node Version:  v16.15.0
+[debug] [2022-07-02T03:39:08.416Z] Time:          Sat Jul 02 2022 09:39:08 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-07-02T03:39:08.417Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-02T03:39:08.543Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-02T03:39:08.544Z] > authorizing via signed-in user (mehedimugdho72@gmail.com)
+[debug] [2022-07-02T03:39:08.544Z] [iam] checking project todo-task-cc639 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-02T03:39:08.548Z] > refreshing access token with scopes: []
+[debug] [2022-07-02T03:39:08.551Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-02T03:39:08.552Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-02T03:39:08.999Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-02T03:39:08.999Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-02T03:39:09.016Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-task-cc639:testIamPermissions [none]
+[debug] [2022-07-02T03:39:09.017Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-task-cc639:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-02T03:39:10.770Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-task-cc639:testIamPermissions 200
+[debug] [2022-07-02T03:39:10.770Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-task-cc639:testIamPermissions {}
+[debug] [2022-07-02T03:39:10.771Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project todo-task-cc639:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-07-02T03:39:10.774Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-task-cc639 [none]
+[debug] [2022-07-02T03:39:11.330Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todo-task-cc639 403
+[debug] [2022-07-02T03:39:11.330Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todo-task-cc639 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-02T03:39:11.333Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-02T03:39:11.585Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Mehedi\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Mehedi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project todo-task-cc639. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-02T03:39:44.296Z] ----------------------------------------------------------------------
+[debug] [2022-07-02T03:39:44.298Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mehedi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-02T03:39:44.299Z] CLI Version:   11.2.0
+[debug] [2022-07-02T03:39:44.299Z] Platform:      win32
+[debug] [2022-07-02T03:39:44.300Z] Node Version:  v16.15.0
+[debug] [2022-07-02T03:39:44.316Z] Time:          Sat Jul 02 2022 09:39:44 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-07-02T03:39:44.317Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-02T03:39:44.427Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-02T03:39:44.428Z] > authorizing via signed-in user (mehedimugdho72@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Projects-Z\TODO-APPS\ToDo-App
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-02T03:39:57.402Z] Using project from CLI flag: todo-task-cc639
+[debug] [2022-07-02T03:39:57.411Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-task-cc639 [none]
+[debug] [2022-07-02T03:39:58.240Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todo-task-cc639 403
+[debug] [2022-07-02T03:39:58.240Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todo-task-cc639 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-02T03:39:58.241Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-02T03:39:58.484Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Mehedi\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Mehedi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project todo-task-cc639. Please make sure the project exists and your account has permission to access it.
